@@ -1,0 +1,14 @@
+1. Java > 1.8 - лучше
+2. IDE
+3. Groovy. - скачиваем с groovy-lang.org
+
+    Три способа установки groovy:
+1. Gradle
+    IDEA -> new project -> выбираем gradle и справа выбираем java + groovy -> в зависимостях меняем на актуальные версии;
+2. Maven
+    IDEA -> new project -> Maven -> подключаем зависимость groovy. В main-директории создаем директорию groovy рядом с
+    java и помечаем ее Mark Directory as -> Sources Root
+3. VanillaIDEA
+    IDEA -> new project -> Groovy и тут возможно нужно будет указать путь к скачанному и распакованному groovy ->
+    создан проект -> переходим в настройки проекта - Libraries - "+" - java - указываем путь к скачанному
+    groovy/lib/extras-jaxb/ - open.
