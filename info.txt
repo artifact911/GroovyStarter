@@ -44,3 +44,8 @@
     13. Приведение типов
         def result = (int) (3 / 2) // javaStyle
         def result = (3 / 2) as Integer // groovyStyle. Можно так приводить к любому типу данных переопределив метод asType(clazz)
+
+    14. в скрипте можно опустить  ине писать def
+    15. char создается ЯВНО и пишется как в java: char value = 'H'
+    16. Если не писать return, то return сработает автоматически для последней строки
+    17. Строки устроены иначе. Подробности в package com.artifact.lesson7
