@@ -35,6 +35,7 @@ class SwitchRunner {
                 break
         }
 
+        // in неявно вызывает метод isCase
         if (x in [1, 3, 6, 9]) {
             println x
         }
