@@ -20,23 +20,23 @@ class ConditionRunner {
         int x = 11
 
         // JavaStyle
-        if(x > 0) {
+        if (x > 0) {
             println x
         }
 
         // Number/Char != 0
-        if(x) {
+        if (x) {
             println x
         }
 
         // сунули свой объект с переопределенным asBoolean
         def person = new Person(19)
-        if(person) {
+        if (person) {
             println person.getId()
         }
 
         // В Java мы часто проверяем на null, прежде чем вызвать что-то:
-        if(person != null) {
+        if (person != null) {
             person.getId()
         }
         // что на этот стчет делает groovy
