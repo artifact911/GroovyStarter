@@ -20,4 +20,11 @@ public class Person {
     public Integer getId() {
         return id;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                '}';
+    }
 }
