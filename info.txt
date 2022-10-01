@@ -121,3 +121,22 @@
     31. У объекта мы можем получить все поля, типа как в рефлекшнАпи в виде мапы и там кроме наших полей еще будет поле
             - класс нашего класса:
                                 o.properties
+
+    32. lesson19. IO. Exceptions
+            В Groovy та же иерархия для InputStream и OutputStream. Для Reader и Writer тож, если мы работаем
+            с текстовыми файлами. Но тем не менее наш основной класс в Groovy для работы с IO это File.class.
+        Дополнитьельные методы для работы с IO уже лежат в утилитном классе ResourceGroovyMethods.
+        При работе с File.class мы не отлавливаем никакие исключения. В Groovy вообще принято использовать uncached
+        исключения.
+
+    33. AST transformations. Что бы понять, как это работает, нам нужно окунуться в то, как работает parser представленный
+            на картинке в consoleStartGroovy.md. Подробнее в 20_AST.md
+            Анноташки:
+                - @Canonical - включает в себя:
+                        - @ToString
+                        - @TupleConstructor
+                        - @EqualsAndHashCode
+                - @Immutable - ничем не отличается от @Canonical плюс все порля делает final
+                - @Builder
+                - @Slf4j
+
