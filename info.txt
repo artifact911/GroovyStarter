@@ -151,3 +151,5 @@
                     является наследником MetaClassImpl
                 - ProxyMetaClass - интерсептор. Редко используется и мы можем внедорится перед/после метода и что-то подкрутить
 
+    36. lesson23. Missing method and property.
+
