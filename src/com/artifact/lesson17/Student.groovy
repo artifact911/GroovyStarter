@@ -27,4 +27,20 @@ class Student {
         println "missing property $name"
         "default value"
     }
+
+    def getInfo() {
+        Closure closure = {
+            println thisObject // == this (Student вызвал он и this)
+            println owner // Класс, где определили closure (Student.class)
+            println delegate // будет равно owner
+            Closure second = {
+                println thisObject // == this
+                println owner // изменится скоуп, т.к. closure определили внутри другого closure
+                println delegate // изменится скоуп, т.к. closure определили внутри другого closure
+            } // declaration
+            // тут мы можем подкручивать и делегировать
+            second() // execution
+        }
+        closure
+    }
 }
